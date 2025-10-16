@@ -1,0 +1,316 @@
+/* ====== BASE ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Gorditas', cursive;
+    /* background-color: #C8102E; */
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+/* NAVBAR */
+.navbar {
+  background-color: #FDB827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #fff; 
+}
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Gorditas', cursive;
+    font-weight: bold;
+    color: #23120B;
+  }
+  
+  .logo-img {
+    width: 60px;        /* ukuran logo */
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .logo-img:hover {
+    transform: rotate(-5deg) scale(1.1);
+    transition: 0.3s ease;
+  }
+
+  
+  .menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #23120B;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #23120B;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: maroon;
+  }
+  
+  /* ====== HERO ====== */
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('img/home.png');
+    background-size: cover;          /* biar gambar nutup full */
+    background-position: center;     /* biar posisi gambar pas */
+    background-repeat: no-repeat;    /* biar gak diulang */
+    color: #fff;                     /* biar teks tetap kelihatan */
+    min-height: 90vh;                /* biar hero-nya tinggi kayak banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+  
+  .hero h2 {
+    font-size: 2em;
+    color: #FDB827;
+  }
+  
+  .hero p {
+    width: 70%;
+    margin: 15px auto;
+    color: #23120B;
+    line-height: 1.5;
+  }
+  
+  /* ====== LOCATION ====== */
+  .location {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #fff7e6;
+  }
+  
+  .location h2 {
+    color: #222831;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+  }
+  
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .location-images {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .location-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .loc-item p {
+    color: #FDB827;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  
+  .loc-item a {
+    text-decoration: none;
+    color: #393E46;
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+  
+  .loc-item a:hover {
+    text-decoration: underline;
+  }
+  
+
+   /* === OUR MENU SECTION === */
+.menu-section {
+  position: relative;
+  background: url("img/bgmenu.png") center/cover no-repeat;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.menu-overlay {
+  backdrop-filter: blur(6px);
+  padding: 60px 0;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #23120B;
+  background-color: #FDB827;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
+}
+
+.menu-pricelist {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.menu-pricelist img {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .menu-title {
+    font-size: 2rem;
+  }
+
+  .menu-pricelist img {
+    width: 95%;
+  }
+}
+
+  /* === CONTACT SECTION === */
+.special {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff7e6; 
+  color: #2b1b00;
+}
+
+.special h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.special p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffe082;
+  color: #2b1b00;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-btn img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1); 
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Warna khusus per platform */
+.contact-btn.whatsapp {
+  background-color: #25d366;
+  color: white;
+}
+
+.contact-btn.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: white;
+}
+  
+  /* ====== FOOTER ====== */
+  footer {
+    background: #222831;
+    text-align: center;
+    padding: 15px;
+    color: #EEEEEE;
+    font-size: 0.9em;
+  }
+  
+  /* ====== RESPONSIVE ====== */
+  @media (max-width: 992px) {
+    .location-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .location-images {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .location-images img {
+      width: 45%;
+      height: 200px;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      background: #FDB827;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      text-align: center;
+      padding: 15px;
+      gap: 10px;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+  
