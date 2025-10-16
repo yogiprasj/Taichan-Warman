@@ -74,7 +74,7 @@
   .hero {
     text-align: center;
     padding: 40px 20px;
-    background-image: url('img/home.png');
+    background-image: url('img/BgHome.png');
     background-size: cover;          /* biar gambar nutup full */
     background-position: center;     /* biar posisi gambar pas */
     background-repeat: no-repeat;    /* biar gak diulang */
@@ -86,16 +86,12 @@
     align-items: center;
   }  
   
-  .hero h2 {
-    font-size: 2em;
-    color: #FDB827;
-  }
-  
-  .hero p {
-    width: 70%;
-    margin: 15px auto;
-    color: #23120B;
-    line-height: 1.5;
+  .hero img {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 50%;
   }
   
   /* ====== LOCATION ====== */
@@ -272,6 +268,7 @@
     padding: 15px;
     color: #EEEEEE;
     font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   /* ====== RESPONSIVE ====== */
