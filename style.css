@@ -74,7 +74,7 @@
   .hero {
     text-align: center;
     padding: 40px 20px;
-    background-image: url('img/BgHome.png');
+    background-image: url('img/home.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,26 +86,11 @@
     align-items: center;
   }
   
-  /* --- HERO IMAGE --- */
-  .hero img {
-    width: 50%;
-    max-width: 600px; /* Biar di desktop gak kegedean */
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 20px;
-    border-radius: 50%;
-  }
-  
   /* --- RESPONSIVE TWEAKS --- */
   @media (max-width: 768px) {
     .hero {
       padding: 60px 10px;
       min-height: 100vh;
-    }
-  
-    .hero img {
-      width: 70%;
-      max-width: 300px;
     }
   }  
   
