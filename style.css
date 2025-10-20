@@ -74,23 +74,36 @@
   .hero {
     text-align: center;
     padding: 40px 20px;
-    background-image: url('img/home.png');
+    background-image: url('img/BgHome.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     min-height: 100vh;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
+  /* Logo biar responsif */
+  .hero-logo {
+    width: 500px;
+    max-width: 80%;
+    height: auto;
+  }
+  
   /* --- RESPONSIVE TWEAKS --- */
   @media (max-width: 768px) {
     .hero {
-      padding: 60px 10px;
-      min-height: 100vh;
+      padding: 60px 15px;
+      background-size: cover; /* tetap cover biar nggak ada ruang kosong */
+      background-position: center top;
+    }
+  
+    .hero-logo {
+      width: 300px;
     }
   }  
   
