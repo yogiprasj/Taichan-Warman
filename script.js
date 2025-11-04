@@ -62,6 +62,7 @@ form.addEventListener("submit", function(e) {
 
   const message = `
 Halo, saya mau pesan:
+
 Nama: ${nama}
 Daging: ${daging} porsi
 Kulit: ${kulit} porsi
@@ -73,7 +74,7 @@ Total Tusuk: ${totalTusuk}
 Total Harga: Rp${total.toLocaleString("id-ID")}
 `;
 
-  const waNumber = "628xxxx";
+  const waNumber = "628xxxxxx";
   const url = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 });
