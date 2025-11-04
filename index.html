@@ -93,6 +93,29 @@
     </div>
   </section>  
 
+  <!-- ORDER FORM SECTION -->
+<section id="order" class="order-section">
+  <h2 class="order-title">Pesan di Tempat</h2>
+  <p class="order-subtitle">Isi form di bawah, lalu pesan langsung via WhatsApp. Pembayaran di tempat ya!🔥</p>
+  <form id="orderForm" class="order-form">
+  <input type="text" id="nama" placeholder="Nama" required class="input-field">
+  
+  <label class="label">Pesanan Sate (per porsi = 10 tusuk)</label>
+  <div class="row"><span>Daging</span><input type="number" id="qtyDaging" min="0" value="0" class="qty-input"></div>
+  <div class="row"><span>Kulit</span><input type="number" id="qtyKulit" min="0" value="0" class="qty-input"></div>
+  <div class="row"><span>Campur</span><input type="number" id="qtyCampur" min="0" value="0" class="qty-input"></div>
+  
+  <label class="label">Jumlah Lontong</label>
+  <input type="number" id="lontong" min="0" value="0" placeholder="Jumlah Lontong" class="input-field">
+  
+  <label class="label">Catatan</label>
+  <textarea id="catatan" placeholder="Contoh: Tidak pedas ya" class="textarea-field"></textarea>
+  
+  <p id="totalHarga" class="total-harga">Total: Rp0</p>
+  <button type="submit" id="submitBtn" class="btn-wa">Pesan via WhatsApp</button>
+  </form>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact" class="special">
     <h3>Punya Acara Spesial?</h3>
