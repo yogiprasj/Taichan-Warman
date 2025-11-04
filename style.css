@@ -217,7 +217,7 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   background: #fff7e6;
   padding: 60px 20px;
   text-align: center;
-  background-color: #FDB827;
+  background-color: #fff7e6;
   color: #2b1b00;
 }
 
@@ -239,6 +239,9 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   gap: 15px;
+  background-color: #FDB827;
+  padding: 5%;
+  border-radius: 5%;
 }
 
 /* Inputs & textarea */
@@ -303,7 +306,7 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 .special {
 text-align: center;
 padding: 80px 20px;
-background: #fff7e6; 
+background: #FDB827;
 color: #2b1b00;
 }
 
