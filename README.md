@@ -1,16 +1,17 @@
 # Sate Taichan Warman Senayan Website
 
-![Sate Taichan Logo](img/logo-Taichan%20Warman.png)
+![Sate Taichan Logo](img/LogoHome.png)
 
-A responsive static website for Sate Taichan Warman Senayan, showcasing their authentic Indonesian satay restaurant with multiple locations in Bekasi, Jakarta area.
+A responsive static website for Sate Taichan Warman Senayan, showcasing their authentic Indonesian satay restaurant with multiple locations in Bekasi.
 
 ## 🌟 Features
 
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Interactive Navigation**: Sticky navbar with mobile hamburger menu
-- **Hero Section**: Eye-catching banner with background image
+- **Hero Section**: Eye-catching photo with description
 - **Location Showcase**: Grid layout displaying multiple restaurant branches with Google Maps links
 - **Menu Display**: Professional price list presentation
+- **Order Section**: User inputs name, portions, and notes, then automatically redirects to WhatsApp with a pre-filled message
 - **Contact Integration**: Direct links to WhatsApp and Instagram
 - **Modern UI**: Clean design with custom fonts and smooth animations
 
@@ -30,7 +31,6 @@ taichanWebsite/
 ├── style.css           # Custom CSS styles
 ├── script.js           # JavaScript for interactivity
 ├── README.md           # Project documentation
-├── TODO.md             # Development tasks
 └── img/                # Image assets
     ├── logo-Taichan Warman.png
     ├── home.png
