@@ -23,6 +23,8 @@ A responsive static website for Sate Taichan Warman Senayan, showcasing their au
 - **Google Fonts**: Gorditas font family for branding
 - **Font Awesome**: Icons for social media links
 
+No frameworks, no backend, no database. Pure hand-crafted web goodness. 🤌🔥
+
 ## 📁 Project Structure
 
 ```
@@ -73,7 +75,7 @@ Simply open `index.html` in any modern web browser. The website is fully static 
 ## 🎨 Customization
 
 ### Colors
-- Primary: `#FDB827` (Golden yellow)
+- Primary: '#FBBE24'
 - Secondary: `#C8102E` (Maroon)
 - Background: `#fff7e6` (Light cream)
 - Text: `#23120B` (Dark brown)
