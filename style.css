@@ -74,6 +74,7 @@ border-bottom: 2px solid black;
   background: #FBBE24;
   padding: 5% 8%;
   font-family: 'Poppins', sans-serif;
+  border-bottom: 2px solid black;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -135,16 +136,16 @@ border-bottom: 2px solid black;
 @media(max-width: 900px) {
   .home {
     padding: 8% 6%;
-    min-height: 80vh;
-    align-items: flex-start;
+    min-height: 90vh; /* Diperpendek sedikit dari 100vh */
+    align-items: center; /* Tetap center untuk tablet */
     padding-top: 40px;
   }
 
   .home-hero {
     flex-direction: column;
     text-align: center;
-    gap: 25px;
-    margin-top: 20px;
+    gap: 30px;
+    margin-top: 0;
   }
 
   .hero-img, .hero-text {
@@ -152,7 +153,7 @@ border-bottom: 2px solid black;
   }
 
   .hero-img img {
-    height: 300px;
+    height: 320px; /* Sedikit lebih tinggi */
     max-width: 500px;
     margin: 0 auto;
   }
@@ -176,56 +177,62 @@ border-bottom: 2px solid black;
 /* Mobile */
 @media(max-width: 480px) {
   .home {
-    padding: 15% 4% 8%;
-    min-height: auto;
-    align-items: flex-start;
-    justify-content: flex-start;
+    padding: 12% 4% 8%;
+    min-height: 85vh; /* Diperpendek untuk mobile */
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 
   .home-hero {
-    gap: 20px;
+    gap: 25px;
     margin-top: 0;
+    width: 100%;
   }
 
   .hero-img img {
-    height: 220px;
+    height: 250px; /* Lebih tinggi dari sebelumnya */
     max-width: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
   }
 
   .hero-text {
-    gap: 15px;
+    gap: 20px;
+    width: 100%;
   }
 
   .hero-text h1 {
-    font-size: 28px;
+    font-size: 32px; /* Sedikit lebih besar */
     line-height: 1.2;
     margin-top: 0;
   }
   
   .hero-text p {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 16px; /* Sedikit lebih besar */
+    line-height: 1.6;
     max-width: 100%;
+    padding: 0 10px;
   }
 }
 
 /* Very Small Mobile */
 @media(max-width: 360px) {
   .home {
-    padding: 12% 3% 6%;
+    padding: 10% 3% 6%;
+    min-height: 80vh; /* Lebih pendek untuk layar sangat kecil */
   }
 
   .hero-img img {
-    height: 200px;
+    height: 220px;
   }
 
   .hero-text h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
   
   .hero-text p {
-    font-size: 13px;
+    font-size: 15px;
+    line-height: 1.5;
   }
 }
 
